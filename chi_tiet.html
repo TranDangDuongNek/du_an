@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chi tiết sản phẩm</title>
+  <link rel="stylesheet" href="chi_tiet.css">
+</head>
+<body>
+
+  <div class="detail-wrapper">
+    <button class="back-btn" onclick="window.location.href='san_pham.html'">⬅ Quay về</button>
+    <div id="detailContainer" class="detail-container"></div>
+
+    <!-- Bình luận -->
+    <div class="comment-section">
+      <h3>Bình luận</h3>
+      <div id="commentList" class="comment-list"></div>
+      <div class="comment-form">
+        <textarea id="commentInput" placeholder="Nhập bình luận..."></textarea>
+        <button id="sendComment">Gửi</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="chi_tiet.js"></script>
+</body>
+</html>

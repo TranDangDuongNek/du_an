@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng sản phẩm</title>
+  <link rel="stylesheet" href="san_pham.css">
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="san_pham.html" class="active">Trang chủ</a></li>
+      <li><a href="dang.html">Đăng sản phẩm</a></li>
+      <li><a href="duyet.html">Duyệt sản phẩm</a></li>
+      <li><a href="login.html">Đăng nhập</a></li>
+    </ul>
+  </div>
+
+  <div class="form-container">
+    <h2>Đăng sản phẩm</h2>
+    <form id="productForm">
+      <label for="productName">Tên sản phẩm</label>
+      <input type="text" id="productName" required>
+
+      <label for="productDesc">Mô tả ngắn</label>
+      <textarea id="productDesc" required></textarea>
+
+      <label for="productDetail">Chi tiết</label>
+      <textarea id="productDetail"></textarea>
+
+      <label for="productLink">Link sản phẩm</label>
+      <input type="url" id="productLink">
+
+      <label for="productImage">Ảnh chính</label>
+      <input type="file" id="productImage" accept="image/*" required>
+
+      <label for="productImages">Ảnh chi tiết (có thể chọn nhiều)</label>
+      <input type="file" id="productImages" accept="image/*" multiple>
+
+      <label for="authorName">Tên tác giả</label>
+      <input type="text" id="authorName" required>
+
+      <label for="authorImage">Ảnh tác giả</label>
+      <input type="file" id="authorImage" accept="image/*">
+
+      <button type="submit">Gửi sản phẩm</button>
+    </form>
+  </div>
+
+  <script src="san_pham.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chi tiết sản phẩm</title>
+</head>
+<body>
+  <div id="chitiet"></div>
+
+  <script>
+    let index = localStorage.getItem("sanpham_chitiet");
+    let list = JSON.parse(localStorage.getItem("sanpham")) || [];
+    let sp = list[index];
+
+    if(sp){
+      document.getElementById("chitiet").innerHTML = `
+        <h2>${sp.name}</h2>
+        <img src="${sp.image}" width="300">
+        <p>${sp.desc}</p>
+      `;
+    }
+  </script>
+</body>
+</html>
